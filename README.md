@@ -62,7 +62,30 @@ whatweb -v -a 3 172.17.52.201
 ```
 # Output:
 # ![image](https://github.com/Roselineb/InformationGathering/assets/128909895/adc47bbf-59ed-4582-b671-535459e6d352)
+# httprint:
+```
+httprint -h 172.17.52.201 -s /usr/share/httprint/signatures.txt -P0 |more
+```
+# Output:
+# ![image](https://github.com/Roselineb/InformationGathering/assets/128909895/71a6afb5-38a2-4c3e-9e8c-2db6393ec836)
+# Tracing the Location:
+## TCP Traceroute:
+```
+sudo traceroute -T www.saveetha.ac.in
+```
+# Output:
+# ![image](https://github.com/Roselineb/InformationGathering/assets/128909895/75c96c14-969b-4215-af17-b9e4efb8bd31)
+# UDP Traceroute:
+```
+sudo traceroute -U www.saveetha.ac.in
+```
+# Output:
+# ![image](https://github.com/Roselineb/InformationGathering/assets/128909895/4df761dd-7ec5-4709-a4b0-feb9cb2a1f24)
+# ICMP Traceroute:
+```
+sudo traceroute  www.saveetha.ac.in
+```
+# ![image](https://github.com/Roselineb/InformationGathering/assets/128909895/fd09282a-a7ce-4cc6-9bd0-e0027afaabfc)
 
- 
 ## RESULT:
 The information gathering techniques tools/procedure were  identified successfully
